@@ -5,7 +5,7 @@ project=$1
 cd $HOME/code/git/$project
 
 tmux new -s $project \
-    "vim $project; $SHELL" \; \
+    "vim .; $SHELL" \; \
 splitw -h \; \
 select-pane -t 0 \; \
 new-window \
